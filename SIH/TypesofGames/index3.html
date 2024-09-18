@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TypesofGames</title>
+    <style>
+        body {
+            background-image: url("TypesofGames.jpg");
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center center;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            background-size: cover; /* This makes the image cover the entire page */
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 100px;
+            margin-left: 50px;
+        }
+        .button-group {
+            display: flex;
+            gap: 60px; /* Space between buttons */
+        }
+        .transparent-button {
+            background-color: rgba(255, 255, 255, 0.2); /* Transparent */
+            border: 2px solid rgb(255, 255, 255); /* Border to make it more visible */
+            color: #0b0b0b;
+            font-size: 200px;
+            font-weight: bold;
+            padding: 15px 30px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+            margin: 0 25px;
+        }
+        .transparent-button:hover {
+            background-color: rgba(213, 139, 236, 0.4); /* Slightly less transparent on hover */
+            color: black;
+        }
+        .preamble-button {
+            flex-grow: 1;
+            margin-right: auto; /* Adjust this value to increase or decrease the distance */
+        }
+        .fundamental-duties-button {
+            margin-left: 10px; /* Space between Preamble and Fundamental Duties */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="button-container">
+        <div class="button-group">
+         <button class="transparent-button" preamble-button type="button" onClick="location.href='http://127.0.0.1:5500/SpinGame/index4.html'">Preamble</button>
+         <button class="transparent-button" fundamental-duties type="button" onClick="location.href='http://127.0.0.1:5500/ImageGame/index5.html'">Fundamental Rights</button>
+       </div>
+        <button class="transparent-button">Directive Principles of State Policy</button>
+        <button class="transparent-button">Fundamental Duties</button>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image2</title>
+    <style>
+        body {
+            background-image: url("Image2.jpg");
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center center;
+            background-size: cover;
+            margin: 0; 
+            height: 100vh; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+            width: 900px; /* Adjust width based on button size and spacing */
+            gap: 100px;
+        }
+
+        .circle-button {
+            width: 300px; /* Increase the width */
+            height: 300px; /* Increase the height */
+            margin-top: 180px;
+            margin-right: 20px;
+            border-radius: 50%;
+            background-color: transparent; /* Semi-transparent white background */
+            border: transparent; /* Border to make the button stand out */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            outline: none;
+    /* Optional shadow for better visibility */
+            transition: background-color 0.3s, border-color 0.3s;
+        }
+
+        .circle-button:hover {
+            background-color: transparent;
+            border-color: transparent;
+        }
+
+        .circle-button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <div class="circle-button" aria-label="Button 1"></div>
+        <div class="circle-button" aria-label="Button 2" type="button" onClick="location.href='http://127.0.0.1:5500/LearningAnalytics/index2.html'"></div>
+    </div>
+</body>
+</html>
+s

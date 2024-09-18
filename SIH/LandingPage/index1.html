@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>LandingPage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <style>
+
+        .poppins-regular {
+            font-family: "Poppins", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+          }
+          
+        body {
+            background-image: url("LandingPage.jpg");
+            background-repeat: no-repeat; 
+            background-attachment: fixed; 
+            background-position: center center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between; /* Aligns items vertically */
+            padding: 0 20px;
+            background-size: cover; /* This makes the image cover the entire page */
+            margin: 0; /* Ensures no default margin around the body */
+            height: 100vh; /* Ensures the body takes the full viewport height */
+        }
+
+        /* Navigation bar styling */
+        nav {
+            width: 100%;
+        /* Semi-transparent background */
+            padding: 10px 20px;
+            position: fixed; /* Fixed position to stay at the top */
+            top: 0;
+            left: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 1000; /* Make sure it's on top of other content */
+        }
+
+        /* Navigation links */
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #000000;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover::after {
+            color: #f8ce45; /* Highlight color on hover */
+        }
+
+        /* Sign In button in the navbar */
+        nav .signin-btn {
+            background-color: #ab54e4;
+            color: #ffffff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav .signin-btn:hover {
+            background-color: #debaf9;
+        }
+
+        /* Styling for the "Start Now" button */
+        .start-now {
+            position: fixed;
+            bottom: 14px;
+            left: 2px;
+            background-color: #8d28d1;
+            color: rgb(255, 255, 255);
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .start-now:hover {
+            background-color: #c899eb;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="http://127.0.0.1:5500/LandingPage/index1.html">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/TypesofGames/index3.html">Games</a></li>
+            <li><a href="http://127.0.0.1:5500/LearningAnalytics/index2.html">Dashboard</a></li>
+        </ul>
+        <button class="signin-btn" type="button" onClick="location.href='http://127.0.0.1:5500/LoginPage/index.html'">SIGN IN</button>
+    </nav>
+         <button class="start-now" type="button" onClick="location.href='http://127.0.0.1:5500/TypesofGames/index3.html'">START NOW</button>
+</body>
+</html>
+ 
